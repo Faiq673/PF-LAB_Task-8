@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 int main() {
-    cout << "Enter number of rows: ";
-    for (int i = 1; i <= 5; i++) {
-        for (int j = 1; j <= i; j++) {
-            cout << "* ";
-        }
-        cout << endl; 
+    int num;
+    long long fact = 1; 
+    cout << "Enter a number: ";
+    cin >> num;
+    for (int i = 1; i <= num; i++) {
+        fact = fact * i;
     }
+    cout << "Factorial  " << num << " = " << fact << endl;
     return 0;
 }
+
